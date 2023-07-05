@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function App() {
+
+  const [count, setCount] = useState(0)
+
   return (
-    <div>App</div>
+    <>
+      <h1>App</h1>
+      <div>{count}</div>
+      <button onClick={() => setCount(count+1)}>Click me</button>
+    </>
   )
 }
 
